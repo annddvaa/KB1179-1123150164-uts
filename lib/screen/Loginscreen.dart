@@ -6,7 +6,7 @@ class Loginscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.green,
       body: Center(
         child: Container(
           padding: const EdgeInsets.all(20.0),
@@ -14,6 +14,8 @@ class Loginscreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 80),
+              const Icon(Icons.lock, size: 80, color: Colors.black),
+              const SizedBox(height: 20),
               const Text(
                 'Login',
                 textAlign: TextAlign.center,
@@ -23,7 +25,7 @@ class Loginscreen extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 1),
               const Text(
                 'Silakan Login Untuk Melanjutkan',
                 textAlign: TextAlign.center,
@@ -49,10 +51,7 @@ class Loginscreen extends StatelessWidget {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15)),
-                    borderSide: BorderSide(
-                      color: Colors.blue[700]!,
-                      width: 1.8,
-                    ),
+                    borderSide: BorderSide(color: Colors.black, width: 1.8),
                   ),
                 ),
               ),
@@ -62,7 +61,7 @@ class Loginscreen extends StatelessWidget {
                 obscureText: true,
                 decoration: InputDecoration(
                   labelText: 'Password',
-                  hintText: 'Masukkan password anda',
+                  hintText: 'Enter Password',
                   prefixIcon: Icon(Icons.lock_outline),
                   suffixIcon: Icon(Icons.visibility_off),
                   border: OutlineInputBorder(
@@ -77,13 +76,11 @@ class Loginscreen extends StatelessWidget {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20)),
-                    borderSide: BorderSide(
-                      color: Colors.blue[700]!,
-                      width: 1.8,
-                    ),
+                    borderSide: BorderSide(color: Colors.black, width: 1.8),
                   ),
                 ),
               ),
+              // Tombol Continue
               const SizedBox(height: 30),
               Container(
                 margin: EdgeInsets.only(left: 50, right: 50),
@@ -93,7 +90,7 @@ class Loginscreen extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color.fromARGB(255, 0, 255, 38),
+                      backgroundColor: Colors.grey[300]!,
                     ),
                     child: Text(
                       "Continue",
@@ -111,7 +108,11 @@ class Loginscreen extends StatelessWidget {
                 onPressed: () {},
                 child: const Text(
                   "Forgot Password?",
-                  style: TextStyle(fontSize: 16, color: Colors.blueAccent),
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
                 ),
               ),
             ],
