@@ -6,7 +6,7 @@ class Loginscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.amber,
       body: Center(
         child: Container(
           padding: const EdgeInsets.all(20.0),
@@ -44,14 +44,14 @@ class Loginscreen extends StatelessWidget {
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15)),
-                    borderSide: BorderSide(
-                      color: Colors.grey[300]!,
-                      width: 1.2,
-                    ),
+                    borderSide: BorderSide(color: Colors.black, width: 1.2),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15)),
-                    borderSide: BorderSide(color: Colors.black, width: 1.8),
+                    borderSide: BorderSide(
+                      color: Colors.grey[300]!,
+                      width: 1.8,
+                    ),
                   ),
                 ),
               ),
@@ -69,18 +69,17 @@ class Loginscreen extends StatelessWidget {
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15)),
-                    borderSide: BorderSide(
-                      color: Colors.grey[300]!,
-                      width: 1.2,
-                    ),
+                    borderSide: BorderSide(color: Colors.black, width: 1.2),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15)),
-                    borderSide: BorderSide(color: Colors.black, width: 1.8),
+                    borderSide: BorderSide(
+                      color: Colors.grey[300]!,
+                      width: 1.8,
+                    ),
                   ),
                 ),
               ),
-              // Tombol Continue
               const SizedBox(height: 30),
               Row(
                 children: [
@@ -91,7 +90,7 @@ class Loginscreen extends StatelessWidget {
                     child: ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.grey[300],
+                        backgroundColor: Colors.black,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15),
                         ),
@@ -100,7 +99,7 @@ class Loginscreen extends StatelessWidget {
                       child: Center(
                         child: const Icon(
                           Icons.fingerprint,
-                          color: Colors.black,
+                          color: Colors.white,
                           size: 28,
                         ),
                       ),
@@ -116,7 +115,7 @@ class Loginscreen extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.grey[300],
+                          backgroundColor: Colors.black,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15),
                           ),
@@ -126,7 +125,7 @@ class Loginscreen extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
-                            color: Colors.black,
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -139,11 +138,7 @@ class Loginscreen extends StatelessWidget {
                 onPressed: () {},
                 child: const Text(
                   "Forgot Password?",
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
+                  style: TextStyle(fontSize: 16, color: Colors.black),
                 ),
               ),
             ],
