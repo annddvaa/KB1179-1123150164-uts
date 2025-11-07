@@ -82,29 +82,57 @@ class Loginscreen extends StatelessWidget {
               ),
               // Tombol Continue
               const SizedBox(height: 30),
-              Container(
-                margin: EdgeInsets.only(left: 1, right: 1),
-                child: SizedBox(
-                  width: double.infinity,
-                  height: 40,
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey[300]!,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15),
+              Row(
+                children: [
+                  // Tombol Fingerprint
+                  SizedBox(
+                    height: 45,
+                    width: 60,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.grey[300],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        padding: EdgeInsets.zero,
                       ),
-                    ),
-                    child: Text(
-                      "Continue",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
+                      child: Center(
+                        child: const Icon(
+                          Icons.fingerprint,
+                          color: Colors.black,
+                          size: 28,
+                        ),
                       ),
                     ),
                   ),
-                ),
+                  const SizedBox(width: 10),
+
+                  // Tombol Continue
+                  Expanded(
+                    flex: 3,
+                    child: SizedBox(
+                      height: 45,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.grey[300],
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                        ),
+                        child: const Text(
+                          "Continue",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(height: 15),
               TextButton(
