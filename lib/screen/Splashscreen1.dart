@@ -23,6 +23,15 @@ class Splashscreen1 extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 30),
+            const Text(
+              'Welcome',
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
           ],
         ),
       ),
