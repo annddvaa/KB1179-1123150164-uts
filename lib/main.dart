@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
+import 'screen/Splashscreen1.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MaterialApp(
+      title: "NIM: 1123150164 UTS",
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
+      ),
+      home: Splashscreen1(),
+      debugShowCheckedModeBanner: false,
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
