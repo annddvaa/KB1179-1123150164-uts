@@ -23,6 +23,7 @@ class Splashscreen1 extends StatelessWidget {
                 ),
               ),
             ),
+            //Text Welcome
             const SizedBox(height: 30),
             const Text(
               'Welcome',
@@ -32,6 +33,7 @@ class Splashscreen1 extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
+            //Subtitle
             const SizedBox(height: 5),
             const Text(
               'Forgot to bring your wallet when you are shopping?',
@@ -41,6 +43,41 @@ class Splashscreen1 extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
+            ),
+            //Bullet 3 titik
+            const SizedBox(height: 30),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // 1
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFF84A98C), // warna terang
+                  ),
+                ),
+                // 2
+                const SizedBox(width: 10),
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFFedede9), // warna redup
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFFedede9), // warna redup
+                  ),
+                ),
+              ],
             ),
           ],
         ),
