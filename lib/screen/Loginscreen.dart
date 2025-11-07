@@ -39,6 +39,13 @@ class Loginscreen extends StatelessWidget {
                   border: OutlineInputBorder(
                     borderRadius: const BorderRadius.all(Radius.circular(20)),
                   ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    borderSide: BorderSide(
+                      color: Colors.grey[300]!,
+                      width: 1.2,
+                    ),
+                  ),
                 ),
               ),
             ],

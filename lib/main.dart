@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: "KB1179-1123150164, Dava Ananda",
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
       ),
       home: Splashscreen1(),
       debugShowCheckedModeBanner: false,
