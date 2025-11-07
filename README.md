@@ -1,16 +1,35 @@
-# flutter_uts
+# TUGAS UTS APLIKASI MOBILE
 
-A new Flutter project.
+## SCREENSHOT
 
-## Getting Started
+<p align="center">
+  <img src="assets/images/Screenshot 1.png" alt="Splahscreen1" width="300">
+  <img src="assets/images/Screenshot 2.png" alt="Splahscreen2" width="300">
+  <img src="assets/images/Screenshot 3.png" alt="Splahscreen3" width="300">
+  <img src="assets/images/Screenshot 4.png" alt="Login Screen" width="300">
+</p>
 
-This project is a starting point for a Flutter application.
+## Identitas
 
-A few resources to get you started if this is your first Flutter project:
+- **Nama Lengkap:** Dava Ananda Wahyudi
+- **NIM:** 1123150164
+- **Mata Kuliah / Proyek:** Aplikasi Mobile
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Cara Menjalankan Project
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Pastikan sudah menginstal **Flutter SDK** minimal versi 3.x.x
+2. Clone atau download repository project ini:
+   ```bash
+   git clone https://github.com/annddvaa/KB1179-1123150164-uts
+   cd flutter_uts
+3. Install semua depedency:
+
+```bash
+flutter pub get
+```
+
+4. run:
+
+```bash
+flutter run
+```
