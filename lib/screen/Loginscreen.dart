@@ -106,6 +106,14 @@ class Loginscreen extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(height: 15),
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  "Forgot Password?",
+                  style: TextStyle(fontSize: 16, color: Colors.blueAccent),
+                ),
+              ),
             ],
           ),
         ),
