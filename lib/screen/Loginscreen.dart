@@ -27,7 +27,7 @@ class Loginscreen extends StatelessWidget {
               ),
               const SizedBox(height: 1),
               const Text(
-                'Silakan Login Untuk Melanjutkan',
+                'Please Login To Continue',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
@@ -65,17 +65,17 @@ class Loginscreen extends StatelessWidget {
                   prefixIcon: Icon(Icons.lock_outline),
                   suffixIcon: Icon(Icons.visibility_off),
                   border: OutlineInputBorder(
-                    borderRadius: const BorderRadius.all(Radius.circular(20)),
+                    borderRadius: const BorderRadius.all(Radius.circular(15)),
                   ),
                   enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
                     borderSide: BorderSide(
                       color: Colors.grey[300]!,
                       width: 1.2,
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
                     borderSide: BorderSide(color: Colors.black, width: 1.8),
                   ),
                 ),
@@ -83,7 +83,7 @@ class Loginscreen extends StatelessWidget {
               // Tombol Continue
               const SizedBox(height: 30),
               Container(
-                margin: EdgeInsets.only(left: 50, right: 50),
+                margin: EdgeInsets.only(left: 1, right: 1),
                 child: SizedBox(
                   width: double.infinity,
                   height: 40,
@@ -91,6 +91,9 @@ class Loginscreen extends StatelessWidget {
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300]!,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
                     ),
                     child: Text(
                       "Continue",
