@@ -32,6 +32,16 @@ class Splashscreen1 extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
+            const SizedBox(height: 5),
+            const Text(
+              'Forgot to bring your wallet when you are shopping?',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
           ],
         ),
       ),
