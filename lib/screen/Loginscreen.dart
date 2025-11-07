@@ -33,11 +33,11 @@ class Loginscreen extends StatelessWidget {
               TextField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
-                  labelText: 'Email',
-                  hintText: 'Masukkan email anda',
-                  prefixIcon: const Icon(Icons.email_outlined),
+                  labelText: 'Phone Number',
+                  hintText: 'Enter Phone Number',
+                  prefixIcon: const Icon(Icons.phone),
                   border: OutlineInputBorder(
-                    borderRadius: const BorderRadius.all(Radius.circular(12)),
+                    borderRadius: const BorderRadius.all(Radius.circular(20)),
                   ),
                 ),
               ),
