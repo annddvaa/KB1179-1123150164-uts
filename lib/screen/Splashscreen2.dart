@@ -36,7 +36,7 @@ class Splashscreen2 extends StatelessWidget {
             // Subtitle
             const SizedBox(height: 5),
             const Text(
-              'Forgot to bring your wallet when you are shopping?',
+              'Dont worry! we got you cover. Use Wallie instend of cash!',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 16,
@@ -55,7 +55,7 @@ class Splashscreen2 extends StatelessWidget {
                   height: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: Color(0xFFedede9),
                   ),
                 ),
                 // 2
@@ -65,7 +65,7 @@ class Splashscreen2 extends StatelessWidget {
                   height: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFedede9), // warna redup
+                    color: Color.fromARGB(255, 0, 0, 0), // warna redup
                   ),
                 ),
                 // 3
@@ -107,6 +107,6 @@ class Splashscreen2 extends StatelessWidget {
           ],
         ),
       ),
-    )
+    );
   }
 }
