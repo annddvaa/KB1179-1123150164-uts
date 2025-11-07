@@ -84,6 +84,28 @@ class Loginscreen extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(height: 30),
+              Container(
+                margin: EdgeInsets.only(left: 50, right: 50),
+                child: SizedBox(
+                  width: double.infinity,
+                  height: 40,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 0, 255, 38),
+                    ),
+                    child: Text(
+                      "Continue",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
