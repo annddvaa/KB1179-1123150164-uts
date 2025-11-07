@@ -29,13 +29,42 @@ class Loginscreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
+              // Input Number
               const SizedBox(height: 30),
               TextField(
-                keyboardType: TextInputType.emailAddress,
+                keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   labelText: 'Phone Number',
                   hintText: 'Enter Phone Number',
                   prefixIcon: const Icon(Icons.phone),
+                  border: OutlineInputBorder(
+                    borderRadius: const BorderRadius.all(Radius.circular(15)),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                    borderSide: BorderSide(
+                      color: Colors.grey[300]!,
+                      width: 1.2,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                    borderSide: BorderSide(
+                      color: Colors.blue[700]!,
+                      width: 1.8,
+                    ),
+                  ),
+                ),
+              ),
+              // Input Password
+              const SizedBox(height: 10),
+              TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  labelText: 'Password',
+                  hintText: 'Masukkan password anda',
+                  prefixIcon: Icon(Icons.lock_outline),
+                  suffixIcon: Icon(Icons.visibility_off),
                   border: OutlineInputBorder(
                     borderRadius: const BorderRadius.all(Radius.circular(20)),
                   ),
@@ -44,6 +73,13 @@ class Loginscreen extends StatelessWidget {
                     borderSide: BorderSide(
                       color: Colors.grey[300]!,
                       width: 1.2,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    borderSide: BorderSide(
+                      color: Colors.blue[700]!,
+                      width: 1.8,
                     ),
                   ),
                 ),

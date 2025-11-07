@@ -87,8 +87,8 @@ class Splashscreen3 extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(left: 50, right: 50),
               child: SizedBox(
-                width: double.infinity, // 👉 Biar lebarnya penuh
-                height: 40, // opsional, biar konsisten tinggi
+                width: double.infinity,
+                height: 40,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -100,7 +100,7 @@ class Splashscreen3 extends StatelessWidget {
                     backgroundColor: Color.fromARGB(255, 255, 255, 255),
                   ),
                   child: Text(
-                    "Continue",
+                    "Get Started",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

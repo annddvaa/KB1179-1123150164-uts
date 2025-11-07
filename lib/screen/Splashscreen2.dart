@@ -87,8 +87,8 @@ class Splashscreen2 extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(left: 50, right: 50),
               child: SizedBox(
-                width: double.infinity, // 👉 Biar lebarnya penuh
-                height: 40, // opsional, biar konsisten tinggi
+                width: double.infinity,
+                height: 40,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(

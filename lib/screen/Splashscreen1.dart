@@ -66,7 +66,7 @@ class Splashscreen1 extends StatelessWidget {
                   height: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFedede9), // warna redup
+                    color: Color(0xFFedede9), 
                   ),
                 ),
                 // 3
@@ -76,7 +76,7 @@ class Splashscreen1 extends StatelessWidget {
                   height: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFedede9), // warna redup
+                    color: Color(0xFFedede9), 
                   ),
                 ),
               ],
@@ -87,8 +87,8 @@ class Splashscreen1 extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(left: 50, right: 50),
               child: SizedBox(
-                width: double.infinity, // 👉 Biar lebarnya penuh
-                height: 40, // opsional, biar konsisten tinggi
+                width: double.infinity, 
+                height: 40, 
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(
