@@ -65,7 +65,7 @@ class Splashscreen3 extends StatelessWidget {
                   height: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 0, 0, 0), // warna redup
+                    color: Color(0xFFedede9),
                   ),
                 ),
                 // 3
@@ -75,7 +75,7 @@ class Splashscreen3 extends StatelessWidget {
                   height: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFedede9), // warna redup
+                    color: Color.fromARGB(255, 0, 0, 0),
                   ),
                 ),
               ],

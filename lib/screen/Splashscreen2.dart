@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_uts/screen/Splashscreen3.dart';
 
 class Splashscreen2 extends StatelessWidget {
   const Splashscreen2({super.key});
@@ -65,7 +66,7 @@ class Splashscreen2 extends StatelessWidget {
                   height: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 0, 0, 0), // warna redup
+                    color: Color.fromARGB(255, 0, 0, 0),
                   ),
                 ),
                 // 3
@@ -75,7 +76,7 @@ class Splashscreen2 extends StatelessWidget {
                   height: 10,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFedede9), // warna redup
+                    color: Color(0xFFedede9),
                   ),
                 ),
               ],
@@ -89,7 +90,12 @@ class Splashscreen2 extends StatelessWidget {
                 width: double.infinity, // 👉 Biar lebarnya penuh
                 height: 40, // opsional, biar konsisten tinggi
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Splashscreen3()),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color.fromARGB(255, 255, 255, 255),
                   ),
